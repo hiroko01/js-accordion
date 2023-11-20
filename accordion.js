@@ -2,15 +2,20 @@
     const $elm =document.querySelector('#js-accordion');
     const $trigger = $elm.getElementsByTagName('a');
 
-//0個目のトリガーに対してクリックイベントを持たせる、
-//実行された時にクリックハンドラーという関数を呼びますよ
-    $trigger[0].addEventListener('click',(e) => clickHandler (e) );
+    const triggerLen = $trigger.length;
+    //カウンター let index = 0;
+    let index = 0;
+    while (index < triggerLen) {
+        $trigger[index].addEventListener('click',(e) => clickHandler (e) );
+        index ++;
+    }
 
     //クリックハンドラーの中身はここから書いていきます↓
     //クリックしたら実行される処理
     const clickHandler =  (e) => {
         e.preventDefault();
-        //console.log('Clicked!');
+
+        const $target = e.currentTarget;
 
 //「nextElementSibling」は＄triggerで<a>タブを取ってる、次の要素を取ってくる
 //今回は「<div class="accordion-contents">」が「nextElementSibling」に当てはまる
