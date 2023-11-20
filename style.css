@@ -1,34 +1,18 @@
-body {
-    background: #eee;
+.accordion {
+    width: 500px;
+    margin: 0 auto;
 }
-
-.container {
-    display: flex;
-    
-  }
-.box {
-    display: flex;
-} 
-
-.item {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    /* padding: 10px; */
-    background-color: aqua;
+.accordion-trigger {
+    margin: 0;
+    padding: 10px;
+    display: block;
+    background: #333;
+    color: #fff;
+    border-top: 1px solid #fff;
 }
-
-.test-01 {
-    display: flex;
-    flex-direction: column;
-    margin: 30px ;
-}
-
-.container-2 {
-    display: flex;
-    margin: 30px;
-}
-
-@media screen  {
-    
+.accordion-contents {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: none;
 }
