@@ -6,70 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>クラスとインスタンス</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <!-- Googleフォント -->
+
 </head>
 <body>
+    <div class="full-screen">
+        <div class="accordion" id="js-faq">
+            <p class="accordion-trigger">
+                Q1.ChatGPTとは何ですか
+            </p>
+            <div class="accordion-contents">
+                A1.<br>
+                オープンAIにより開発されたAI。文章生成、質問応答など多岐にわたるタスクに対応。知識は2022年まで。
+            </div>
 
-    <div class="accordion" id="js-faq">
-        <p class="accordion-trigger">
-            Q1.わわわ
-        </p>
-        <div class="accordion-contents">
-            A1.ををを
+            <p class="accordion-trigger">
+                Q2.バックエンドエンジニアとはどういう内容の仕事をするのか、教えてください。
+            </p>
+            <div class="accordion-contents">
+                A2.<br>
+                バックエンドエンジニアは、
+                ウェブアプリケーションやソフトウェアの裏側で動作するサーバーサイドの開発に携わる
+                エンジニアのことです。バックエンドは、ユーザーが直接対話する前に、
+                データの処理やサーバーとのやり取りなど、裏方で行われる処理を指します。
+            </div>
         </div>
 
-        <p class="accordion-trigger">
-            Q2.バックエンドエンジニアとはどういう内容の仕事をするのか、教えてください。
-        </p>
-        <div class="accordion-contents">
-            A2.バックエンドエンジニアは、
-            ウェブアプリケーションやソフトウェアの裏側で動作するサーバーサイドの開発に携わる
-            エンジニアのことです。バックエンドは、ユーザーが直接対話する前に、
-            データの処理やサーバーとのやり取りなど、裏方で行われる処理を指します。
+
+        <div class="accordion" id="js-accordion">
+            <a href="" class="accordion-trigger">
+                Q1.神戸でおすすめの観光地は？
+            </a>
+            <div class="accordion-contents">
+                A1.<br>
+                北野町（Kitano-cho）<br>
+
+                北野町は西洋風の歴史的な街並みが残るエリアで、洋館やカフェが点在しています。外国人居留地として栄えた歴史が感じられる場所です。
+            </div>
+
+            <a href="" class="accordion-trigger">
+                Q2.神戸でおすすめのカフェは？<br>
+            </a>
+            <div class="accordion-contents">
+                A2.<br>
+                コアリューシェ（Coalette）
+
+                六甲山に位置するカフェで、自家製の焼き菓子や美味しいコーヒーが楽しめます。山の中腹にあり、自然の中でリラックスできる場所です。
+            </div>
+            <a href="" class="accordion-trigger">
+                Q3.神戸でおすすめのお店は？
+            </a>
+            <div class="accordion-contents">
+                A3.<br>
+                みなと元町商店街<br>
+                神戸の中心地である元町周辺は、歴史的な建物やショップがあります。おしゃれなカフェやアンティークショップが集まるエリアです。
+            </div>
         </div>
+
+        <dl class="accordion" id="js-accordion-mini">
+            <dt class="accordion-trigger">
+                Q1.RGBについて教えてください
+            </dt>
+            <dd class="accordion-contents">
+                A1.<br>
+                RGBは主にデジタル画像、ディスプレイ、ライティングなどの分野で使用されています。
+                <br>
+                各色の強度を0から255までの数値で表現することが一般的です。例えば、RGB(255, 0, 0)は赤、RGB(0, 255, 0)は緑、RGB(0, 0, 255)は青を表します。これらの基本色を組み合わせて、さまざまな色を表現できます。
+            </dd>
+
+            <dt class="accordion-trigger">
+                Q2.印刷の色の表記について教えてください
+            </dt>
+            <dd class="accordion-contents">
+                A2.<br>
+                印刷の色の表記は、主にCMYK（シアン、マゼンタ、イエロー、ブラック）カラーモデルを使用しています。
+                <br>
+                CMYKでは、シアン、マゼンタ、イエロー、ブラックの4つの色を混ぜ合わせて、様々な色を再現します。これは吸光性カラーモデルで、色の生成は各色の光を吸収することによって行われます。
+
+            </dd>
+        </dl>
     </div>
-
-    <br><br><br>
-
-    <div class="accordion" id="js-accordion">
-        <a href="" class="accordion-trigger">
-            Q1.えええ
-        </a>
-        <div class="accordion-contents">
-            A1.おおお
-        </div>
-
-        <a href="" class="accordion-trigger">
-            Q2.うううううう
-        </a>
-        <div class="accordion-contents">
-            A2.ああああああああ
-        </div>
-        <a href="" class="accordion-trigger">
-            Q3.れれれれれ
-        </a>
-        <div class="accordion-contents">
-            A3.おおおおお
-        </div>
-    </div>
-
-<br><br><br>
-
-    <dl class="accordion" id="js-accordion-mini">
-        <dt class="accordion-trigger">
-            Q1.▲
-        </dt>
-        <dd class="accordion-contents">
-            A1.ををを
-        </dd>
-
-        <dt class="accordion-trigger">
-            Q2.□
-        </dt>
-        <dd class="accordion-contents">
-            A2.○
-        </dd>
-    </dl>
-
     <script src="./accordion.js"></script>
 </body>
 </html>

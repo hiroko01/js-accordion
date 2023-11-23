@@ -1,18 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Kiwi Maru', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.full-screen {
+    width: 100vw;
+    /* height: 100vh; */
+    min-height: 100vh; /* コンテンツがビューポートより小さい場合も100vhと同じ高さを維持 */
+    background:  linear-gradient(#4169e1, pink);
+    display: flex;
+    flex-direction: column; /* タブとコンテンツを縦に配置 */
+    /* justify-content: center; */
+    align-items: center;
+    padding-bottom: 60px;
+}
+
 .accordion {
     width: 500px;
     margin: 0 auto;
+    padding-top: 60px;
 }
 .accordion-trigger {
     margin: 0;
     padding: 10px;
     display: block;
-    background: #333;
+    background: rgba( 0, 0, 0, 0.4);
     color: #fff;
-    border-top: 1px solid #fff;
+    border-top: 1px solid rgba( 255, 255, 255, 0.2);
 }
 .accordion-contents {
     margin: 0;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba( 255, 255, 255, 0.2);
     display: none;
 }
